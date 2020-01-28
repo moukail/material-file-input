@@ -1,11 +1,7 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 
-// const { makeSureNoAppIsSelected } = require('@nrwl/schematics/src/utils/cli-config-utils');
-// Nx only supports running unit tests for all apps and libs.
-// makeSureNoAppIsSelected();
-
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
@@ -20,12 +16,9 @@ module.exports = function(config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     coverageIstanbulReporter: {
-      dir: require('path').join(__dirname, 'coverage'),
+      dir: require('path').join(__dirname, '../../coverage'),
       reports: ['html', 'lcovonly'],
       fixWebpackSourcePaths: true
-    },
-    angularCli: {
-      environment: 'dev'
     },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
