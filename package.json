@@ -2,6 +2,7 @@
   "$schema": "./node_modules/ng-packagr/package.schema.json",
   "name": "@moukail/material-file-input",
   "version": "9.0.0",
+  "private": false,
   "license": "MIT",
   "author": {
     "name": "Jeremy Legros"
@@ -29,10 +30,10 @@
     "url": "https://github.com/moukail/ngx-material-file-input"
   },
   "peerDependencies": {
-    "@angular/cdk": "^9.0.0-rc.8",
-    "@angular/common": "^9.0.0-rc.11",
-    "@angular/core": "^9.0.0-rc.11",
-    "@angular/material": "^9.0.0-rc.8"
+    "@angular/cdk": "^9.0.0-rc.10",
+    "@angular/common": "^9.0.0-rc.14",
+    "@angular/core": "^9.0.0-rc.14",
+    "@angular/material": "^9.0.0-rc.10"
   },
   "devDependencies": {
     "@angular/core": "^9.0.0-rc.11",
